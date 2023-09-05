@@ -1,12 +1,14 @@
-* {
-  box-sizing: border-box;
+
+.app-div{
+  height: 100%;
 }
 
 body {
-  margin: 0;
   font-family: Inter, sans-serif;
   background: #282D35;
 }
+
+/* Start of Navigation Bar */
 
 .nav-logo {
   width: 28.93px;
@@ -54,6 +56,19 @@ body {
   margin-right: 27px;
 }
 
+/* End of Navigation Bar */
+
+/* Start of Content */
+
+.body-content {
+  display: flex;
+  height: 100%;
+}
+/* Start of Content */
+
+/* Start of Main Content */
+
+
 .main{
   color: #FFF;
   margin-top: 57px;
@@ -62,8 +77,8 @@ body {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
+  width: 75%;
 }
-
 
 
 .main > h1{
@@ -90,6 +105,136 @@ margin-left: 46px;
   font-size: 1.4rem;
 }
 
+/* End of Main Content */
+
+
+/* Start of Side Pane */
+
+.profile-pic {
+  border-radius: 10px 10px 0px 0px;
+  width: 200px;
+  margin-top: 44px;
+}
+
+.side-pane {
+  font-family: Inter, sans-serif;
+  align-items: center;
+  background: #1A1B21;;
+  width: 30%;
+  text-align: center;
+  color: #FFF;
+}
+
+.side-pane > h1 {
+font-size: 25px;
+font-weight: 700;
+}
+
+.side-pane > h3 {
+  color: #F3BF99;
+  font-size: 12.8px;
+  font-weight: 400;
+}
+
+.side-pane > h2 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 18px 50px;
+}
+
+.side-pane > p {
+font-size: 10.24px;
+font-weight: 400;
+text-align: justify;
+margin: 18px 50px;
+}
+
+.side-pane > small > a {
+  color: #FFF;
+  font-size: 10.24px;
+  font-weight: 400;
+}
+
+/* End of Side Pane */
+
+/* Start of Contact List */
+
+.btn-panel {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 18px 50px;
+  justify-content: space-around;
+}
+
+.btn-panel > button {
+  display: flex;
+  width: 115px;
+  padding: 9px 13px 9px 11px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+}
+
+.btn-panel > button > a {
+  align-items: center;
+  justify-content: center;
+}
+
+.linkedin-btn a {
+  color: #FFF;
+}
+
+.email-btn a {
+  color: black;
+}
+
+.btn-panel > .linkedin-btn {
+  background: #5093E2;
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--gray-300, #4c80bc);
+}
+
+
+.btn-panel > .email-btn {
+  border: 1px solid var(--gray-300, #D1D5DB);
+  background: var(--white, #FFF);
+  color: #FFF;
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+/* End of Contact List */
+
+
+/* Start of Footer */
+
+.footer {
+  background: #161619;
+  display: flex;
+  height: 64px;
+  align-items: center;
+  text-align: right;
+}
+
+.footer > img{
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  fill: #918E9B;
+  margin: 0px 25px;
+  
+}
+
+.footer > img:first-child {
+  margin-left: auto;
+}
+
+/* End of Footer */
 
 /* @keyframes logo-spin {
   from {
