@@ -7,10 +7,16 @@ import Content from './component/Content'
 import Footer from './component/Footer'
 
 function App() {
+
+  const [darkMode, setDarMode]=  useState(false);
+
+  function toggleDarkMode() {
+      setDarMode( prevState => !prevState)
+  }
   return (
   <div className='app-div'>
-    <Navbar/>
-    <Content/>
+    <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+    <Content darkMode={darkMode}/>
     <Footer/>
   </div>)
 }

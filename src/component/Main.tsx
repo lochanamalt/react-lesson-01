@@ -1,8 +1,8 @@
 import SidePane from "./SidePane"
 
-function Main() {
+function Main(props: any) {
     return (
-        <main className="main">
+        <main className={props.darkMode ? "dark" : ""}>
             <h1>Fun facts about React</h1>
 
             <ul className="list">

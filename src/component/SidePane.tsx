@@ -1,9 +1,9 @@
 import profilePic from "../assets/profile-pic.png"
 import Contacts from "./Contacts";
 
-function SidePane(){
+function SidePane(props: any){
     return (
-        <div className="side-pane">
+        <div className={ props.darkMode ? "side-pane dark ": "side-pane"}>
             <img src={profilePic} className="profile-pic"/>
             <h1>Lochana Marasinghe</h1>
             <h3>Fullstack Software Engineer</h3>

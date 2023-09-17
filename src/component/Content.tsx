@@ -1,11 +1,11 @@
 import Main from "./Main";
 import SidePane from "./SidePane";
 
-function Content() {
+function Content(props: any) {
     return (
-        <div className="body-content">
+        <div className={props.darkMode ? "body-content dark" : "body-content"}>
             <Main/>
-            <SidePane/>
+            <SidePane darkMode={props.darkMode}/>
         </div>
     )
 }
